@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Obchod</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="objednavka.css">
+    </head>
+    <body>
+        <div id="page">
+            
+            <header id="header">
+                <div id="meno-stranky">
+                    <p>Meno stranky</p>
+                </div>
+                <nav id="nav">
+                    <ul id="nav-list">
+                        <li class="nav-item ni"><button class="nav-button">produkty</button>
+                            <ul class="dropdown">
+                                <li class="dropdown-item"><a class="dropdown-item-text" href="zuvak.html">zuvak</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item-text" href="">random2</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item-text" href="">random3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ni"><a href="" class="nav-button">kontakt</a></button></li>
+                        <li class="nav-item"><a href="" id="cart" class="nav-button"></a></button></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="main">
+                <form action="https://formsubmit.co/michal.miartus@spsmt.sk" method="POST">
+                    <input class="form-border" type="email" id="email" name="email" placeholder="E-mail" required>
+                    <textarea class="form-border" name="produkty-na-obj" id="produkty-na-obj" cols="1" rows="1" readonly></textarea>
+                    <input type="hidden" name="_template" value="table">
+                    <button id="submitos" type="submit">Submit</button>
+                </form>
+            </main>
+
+        </div>
+        <script src="formos.js"></script>
+    </body>
+</html>
